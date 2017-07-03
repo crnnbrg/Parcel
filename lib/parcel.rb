@@ -5,4 +5,8 @@ class Parcel
     @length = length
     @weight = weight
   end
+
+  define_method(:create?) do
+    true
+  end
 end
