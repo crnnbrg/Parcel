@@ -1,0 +1,39 @@
+<div class="parcel-cost-form">
+	<form action="/index">
+		<div class="row">
+			<div class="input-field col s6">
+				<label>Width</label>
+				<input type="text" name="width" id="width" placeholder="Width">
+			</div>
+			<div class="input-field col s6">
+				<label>Height</label>
+				<input type="text" name="height" id="height" placeholder="Height">
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s6">
+				<label>Length</label>
+				<input type="text" name="length" id="length" placeholder="Length">
+			</div>
+			<div class="input-field col s6">
+				<label>Weight</label>
+				<input type="text" name="weight" id="weight" placeholder="Weight">
+			</div>
+		</div>
+		<div class="submit-btn">
+			<button class="waves-effect waves-light btn" type="submit">Submit</button>
+		</div>
+	</form>
+</div>
+<div class="row">
+	<div class="input-field col s6">
+		<p>Width: <%= @parcel.width() %> </p>
+		<p>Height: <%= @parcel.height() %> </p>
+		<p>Length: <%= @parcel.length() %> </p>
+	</div>
+	<div class="input-field col s6">
+		<p>Weight: <%= @parcel.weight() %> </p>
+		<p>Volume: <%= @parcel.volume() %> </p>
+		<h3 class="text-success">KES. <%= @cost%></h3>
+	</div>
+</div>
